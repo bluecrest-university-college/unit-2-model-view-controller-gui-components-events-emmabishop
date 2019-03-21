@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/icon2"
+        android:paddingBottom="20dp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:id="@+id/emailID"
+        android:layout_height="wrap_content">
+
+        <android.support.design.widget.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:hint="Label Result"
+        android:textSize="17dp"
+        android:id="@+id/labelID"/>
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/confirmID"
+        android:layout_width="600dp"
+        android:layout_height="50dp"
+        android:text="Confirm"
+        android:textAllCaps="true"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        app:sub_btn_background="@color/colorAccent"
+        app:sub_btn_duration="3000"
+        app:sub_btn_line_color="@color/sub_btn_line"
+        app:sub_btn_ripple_color="@color/colorPrimaryDark"
+        app:sub_btn_tick_color="@color/yellow" />
+
+</LinearLayout>
